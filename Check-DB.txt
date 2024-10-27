@@ -1,0 +1,9 @@
+Check DB Connection
+-------------------
+Connect to VPN
+Install HeidiSQL
+Login to HeidiSQL
+db.step-into-iot.cloud 
+    3306
+    root
+    ExpenseApp1

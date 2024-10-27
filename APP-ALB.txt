@@ -1,0 +1,27 @@
+Load Balancing if there are multiple servers...
+AutoScaling based on traffic
+
+ALB
+Listener -- listen to particular protocol & port (EX: http: 80)
+Rules -- based on rules it redirect traffic to different target groups
+Target Groups -- group of instances belong to particular module/component
+Health Checks
+
+Target Group 
+*.app-dev.step-into-iot.cloud __> APP LB
+be.app-dev.step-into-iot.cloud __> BE TG 
+fe.app-dev.step-into-iot.cloud __> FE TG
+user.app-dev.step-into-iot.cloud __> User TG
+
+
+Rule's:
+step-into-iot.cloud -- home page
+step-into-iot.cloud/api/cart -- path is /api/cart -- cart target group
+step-into-iot.cloud/api/payment -- path is /api/payment -- payment target group
+m.facebook -- mobile code
+facebook.com -- website code
+
+cart.step-into-iot.cloud  -- host path
+step-into-iot.cloud/cart  -- context path
+
+Default Rule is mandatory if any Rule doesn't matches then it execute

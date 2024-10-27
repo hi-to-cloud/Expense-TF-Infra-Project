@@ -1,0 +1,7 @@
+Home __> Watch Movies
+
+Home __> ISP __> Download Movies from Internet (first time) 
+Home __> ISP __> Download Movies from ISP Cache
+
+us-east-1 __> CDN __> Edge locations provided by AWS __> low latency to customers
+static content(images, videos) can be kept at CDN
